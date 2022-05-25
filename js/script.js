@@ -12,7 +12,7 @@ let myNumber = 2022;
 alert(myNumber);
 
 // 3.Спросите имя пользователя с помощью метода prompt. Выведите сообщение на страницу с помощью document.write : “Рад знакомству {имя пользователя}!”.
-let name = prompt("Здравствуйте,как ваше имя?");
+let name = prompt("Здравствуйте,как ваше имя?", "Айпери");
 document.write("Рад знакомству!" + name);
 
 // 4.Даны два числа a, b. Написать программу, которая считает среднее арифметическое двух чисел.
@@ -41,13 +41,14 @@ let user = {
   age: 31,
   friendList: "Aidai Tilek Maksat",
   mailAddress: true,
-  emailAddress: "aipei.cholponkulova.alt@gmail.com",
+  emailAddress: "aiperi.cholponkulova.alt@gmail.com",
 };
-console.log(user.userName);
-console.log(user.age);
-console.log(user.friendList);
-console.log(user.mailAddress);
-console.log(user.emailAddress);
+// console.log(user.userName);
+// console.log(user.age);
+// console.log(user.friendList);
+// console.log(user.mailAddress);
+// console.log(user.emailAddress);
+console.log(user);
 
 // 7. Создайте объект описывающий блог-пост на сайте:
 // - Название поста
@@ -56,23 +57,22 @@ console.log(user.emailAddress);
 // - Тело поста (содержит текст поста)
 // - Картинка поста (содержит url картинки)
 // - Теги поста
-
-// let blogPost = {
-//   postTitle: "macarons",
-//   postAutor: "edim doma",
-//   postPublicationDate: "02.08.2019",
-//   postText:
-//     "Как только у нас его не называют — макарон, макарун, макаронс, макарони… Истинные сластены сразу понимают, о чем идет речь. О знаменитом французском десерте на основе миндальной меренги. И хотя выглядит он незамысловато, приготовить его по всем канонам — целое искусство, освоить которое непросто. Сегодня мы раскроем главные кулинарные хитрости легендарного лакомства, разберем оригинальные рецепты, а заодно узнаем историю его возникновения.",
-//   postFoto:
-//     "https://e3.edimdoma.ru/data/posts/0002/2907/22907-ed4_wide.jpg?1631188310",
-//   postTeg: "#nice, #macarons, #tastymacarons, #edimdoma",
-// };
-// console.log(blogPost.postTitle);
-// console.log(blogPost.postAutor);
-// console.log(blogPost.postPublicationDate);
-// console.log(blogPost.postText);
-// console.log(blogPost.postFoto);
-// console.log(blogPost.postTeg);
+let post = {
+  postTitle: "macarons",
+  postAutor: "edim doma",
+  postPublicationDate: "02.08.2019",
+  postText:
+    "Как только у нас его не называют — макарон, макарун, макаронс, макарони… Истинные сластены сразу понимают, о чем идет речь. О знаменитом французском десерте на основе миндальной меренги. И хотя выглядит он незамысловато, приготовить его по всем канонам — целое искусство, освоить которое непросто. Сегодня мы раскроем главные кулинарные хитрости легендарного лакомства, разберем оригинальные рецепты, а заодно узнаем историю его возникновения.",
+  postFoto:
+    "https://e3.edimdoma.ru/data/posts/0002/2907/22907-ed4_wide.jpg?1631188310",
+  postTeg: "#nice, #macarons, #tastymacarons, #edimdoma",
+};
+console.log(post.postTitle);
+console.log(post.postAutor);
+console.log(post.postPublicationDate);
+console.log(post.postText);
+console.log(post.postFoto);
+console.log(post.postTeg);
 
 // 8.Создайте массив с именами пользователей.
 
@@ -103,7 +103,7 @@ let blogPost = [
 
     postFoto:
       "https://e3.edimdoma.ru/data/posts/0002/2907/22907-ed4_wide.jpg?1631188310",
-    postTeg: "#nice, #macarons, #tastymacarons, #edimdoma",
+    postTeg: ["nice", "macarons", "tastymacarons", "edimdoma"],
   },
 ];
 console.log(blogPost);
